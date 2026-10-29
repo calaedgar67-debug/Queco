@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Lienzo y superficies cálidas (Porcelana / Piedra suave) */
+  --color-queco-canvas: #FAF7F3;
+  --color-queco-surface: #FFFFFF;
+  --color-queco-subtle: #F4EFE9;
+  --color-queco-subtle-hover: #EAE2D8;
+  --color-queco-border: #E8DFD5;
+  --color-queco-border-strong: #D5C6B6;
+
+  /* Tipografía cálida (Cacao / Espresso tostado) */
+  --color-queco-ink: #261B16;
+  --color-queco-body: #5C4E45;
+  --color-queco-muted: #847368;
+
+  /* Terracota Queco (Olla principal del logo — contraste WCAG AA 5.06:1 con blanco) */
+  --color-queco-terracotta: #BC4B16;
+  --color-queco-terracotta-hover: #9E3C0E;
+  --color-queco-terracotta-soft: #FDF2EC;
+  --color-queco-terracotta-border: #F2C9B5;
+
+  /* Salvia Queco (Globo '?' del logo) */
+  --color-queco-sage: #3F5D46;
+  --color-queco-sage-soft: #F2F6F3;
+  --color-queco-sage-border: #CFE0D3;
+
+  /* Miel Dorada Queco (Letras 'QUECO' y cuchara de madera) */
+  --color-queco-gold: #8A5608;
+  --color-queco-gold-soft: #FEF9ED;
+  --color-queco-gold-border: #F1DCAC;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: var(--color-queco-canvas);
+    color: var(--color-queco-ink);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

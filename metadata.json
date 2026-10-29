@@ -1,0 +1,6 @@
+{
+  "name": "Queco — ¿Hoy Qué Cocino?",
+  "description": "Aplicación minimalista e intuitiva para cocinar a diario con lo que tienes en casa: ingresa tus insumos sin fricción, descubre platos sugeridos con ingredientes adicionales mínimos y mira el paso a paso en YouTube.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
